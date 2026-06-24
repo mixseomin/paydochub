@@ -1,0 +1,1678 @@
+[
+ {
+  "name": "Loves Talent Stop",
+  "slug": "loves-talent-stop",
+  "pv": 6921,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "loves-talent-stop-employee-portal"
+  ]
+ },
+ {
+  "name": "Hobby Lobby",
+  "slug": "hobby-lobby",
+  "pv": 5319,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "hobby-lobby-employee-portal"
+  ]
+ },
+ {
+  "name": "Byjus",
+  "slug": "byjus",
+  "pv": 5036,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "employee-service-portal-byjus"
+  ]
+ },
+ {
+  "name": "Salvation Army",
+  "slug": "salvation-army",
+  "pv": 2963,
+  "demand": 1,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "ultipro-login-salvation-army"
+  ]
+ },
+ {
+  "name": "Best Buy",
+  "slug": "best-buy",
+  "pv": 2435,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "best-buy-etk-employee-portal",
+   "best-buy-employee-portal-password-reset"
+  ]
+ },
+ {
+  "name": "IKEA",
+  "slug": "ikea",
+  "pv": 2320,
+  "demand": 4,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "ikea-employee-email-login",
+   "ikea-payslip-portal",
+   "ess-login-ikea",
+   "kronos-ikea-portal"
+  ]
+ },
+ {
+  "name": "Kohls",
+  "slug": "kohls",
+  "pv": 2271,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kohls-kronos-schedule-login"
+  ]
+ },
+ {
+  "name": "Meridian",
+  "slug": "meridian",
+  "pv": 2258,
+  "demand": 2,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "meridian-ultipro-login",
+   "meridian-payslip-login"
+  ]
+ },
+ {
+  "name": "Dgme",
+  "slug": "dgme",
+  "pv": 1993,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "dgme-employee-portal-w2",
+   "dgme-employee-access-login"
+  ]
+ },
+ {
+  "name": "Accenture",
+  "slug": "accenture",
+  "pv": 1442,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "accenture-employee-referral-portal",
+   "accenture-employee-portal-portal"
+  ]
+ },
+ {
+  "name": "Genserv",
+  "slug": "genserv",
+  "pv": 1431,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "genserv-payroll-login"
+  ]
+ },
+ {
+  "name": "Countdown",
+  "slug": "countdown",
+  "pv": 1332,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "countdown-success-factors-login-nz"
+  ]
+ },
+ {
+  "name": "Noonan",
+  "slug": "noonan",
+  "pv": 1332,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "noonan-connect-employee-portal-login"
+  ]
+ },
+ {
+  "name": "Nike",
+  "slug": "nike",
+  "pv": 1265,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "nike-kronos-login"
+  ]
+ },
+ {
+  "name": "Lowes",
+  "slug": "lowes",
+  "pv": 1235,
+  "demand": 4,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "lowes-kronos-employee-portal",
+   "www-lowes-employee-portal",
+   "lowes-employee-portal-w2",
+   "lowes-pay-stub-portal"
+  ]
+ },
+ {
+  "name": "Rack Room Shoes",
+  "slug": "rack-room-shoes",
+  "pv": 1146,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "rack-room-shoes-employee-login",
+   "rack-room-shoes-employee-portal"
+  ]
+ },
+ {
+  "name": "Brookshire Grocery",
+  "slug": "brookshire-grocery",
+  "pv": 1102,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "brookshire-grocery-company-employee-portal"
+  ]
+ },
+ {
+  "name": "Fresh Market",
+  "slug": "fresh-market",
+  "pv": 1082,
+  "demand": 2,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "the-fresh-market-employee-portal",
+   "the-fresh-market-ultipro-login"
+  ]
+ },
+ {
+  "name": "KFC",
+  "slug": "kfc",
+  "pv": 1075,
+  "demand": 3,
+  "platforms": [],
+  "examples": [
+   "kfc-payslip-login",
+   "kfc-payroll-login",
+   "hr-portal-kfc"
+  ]
+ },
+ {
+  "name": "Wendys",
+  "slug": "wendys",
+  "pv": 1051,
+  "demand": 3,
+  "platforms": [
+   "Workday",
+   "UltiPro"
+  ],
+  "examples": [
+   "wendys-workday-login",
+   "wendys-ultipro-login",
+   "wendys-employee-portal"
+  ]
+ },
+ {
+  "name": "Ceridian",
+  "slug": "ceridian",
+  "pv": 1044,
+  "demand": 1,
+  "platforms": [
+   "Dayforce"
+  ],
+  "examples": [
+   "ceridian-dayforce-login"
+  ]
+ },
+ {
+  "name": "Stater Bros",
+  "slug": "stater-bros",
+  "pv": 1041,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "stater-bros-employee-portal"
+  ]
+ },
+ {
+  "name": "DVC",
+  "slug": "dvc",
+  "pv": 1029,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "dvc-employees-portal-payslip",
+   "dvc-employees-portal-login"
+  ]
+ },
+ {
+  "name": "Caesars",
+  "slug": "caesars",
+  "pv": 1025,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "scheduling-caesars-ess-login",
+   "caesars-hub-employee-login"
+  ]
+ },
+ {
+  "name": "Shawinc",
+  "slug": "shawinc",
+  "pv": 1002,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "myworkday-shawinc-login"
+  ]
+ },
+ {
+  "name": "Chewy",
+  "slug": "chewy",
+  "pv": 1000,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "chewy-employee-portal"
+  ]
+ },
+ {
+  "name": "Dunkin Donuts",
+  "slug": "dunkin-donuts",
+  "pv": 993,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "dunkin-donuts-employee-portal"
+  ]
+ },
+ {
+  "name": "Jb Hunt",
+  "slug": "jb-hunt",
+  "pv": 992,
+  "demand": 3,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "my-workday-login-jb-hunt",
+   "jb-hunt-com-employee-login",
+   "jb-hunt-payroll-login"
+  ]
+ },
+ {
+  "name": "Ingles",
+  "slug": "ingles",
+  "pv": 992,
+  "demand": 2,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "ingles-employee-portal",
+   "kronos-ingles-portal"
+  ]
+ },
+ {
+  "name": "North Memorial",
+  "slug": "north-memorial",
+  "pv": 984,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "myhr-north-memorial-login"
+  ]
+ },
+ {
+  "name": "Leggett Platt",
+  "slug": "leggett-platt",
+  "pv": 953,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "paystub-portal-login-leggett-and-platt"
+  ]
+ },
+ {
+  "name": "Hyatt",
+  "slug": "hyatt",
+  "pv": 948,
+  "demand": 2,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-hyatt-employee-login",
+   "hyatt-connect-employee-portal"
+  ]
+ },
+ {
+  "name": "ICICI Bank",
+  "slug": "icici-bank",
+  "pv": 928,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "icici-bank-universe-employee-portal"
+  ]
+ },
+ {
+  "name": "Accentcare",
+  "slug": "accentcare",
+  "pv": 910,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "workday-accentcare-login"
+  ]
+ },
+ {
+  "name": "Leprino",
+  "slug": "leprino",
+  "pv": 906,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "my-leprino-employee-login",
+   "my-leprino-employee-portal"
+  ]
+ },
+ {
+  "name": "PIH",
+  "slug": "pih",
+  "pv": 902,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "pih-employee-portal"
+  ]
+ },
+ {
+  "name": "Eastern Health",
+  "slug": "eastern-health",
+  "pv": 893,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "connect-eastern-health-employee-portal"
+  ]
+ },
+ {
+  "name": "Landrys",
+  "slug": "landrys",
+  "pv": 881,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "landrys-employee-portal-login",
+   "landrys-employee-portal"
+  ]
+ },
+ {
+  "name": "EIL",
+  "slug": "eil",
+  "pv": 874,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "eil-retired-employees-portal"
+  ]
+ },
+ {
+  "name": "Liberata",
+  "slug": "liberata",
+  "pv": 860,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "liberata-payroll-login"
+  ]
+ },
+ {
+  "name": "Marks Spencer",
+  "slug": "marks-spencer",
+  "pv": 859,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "marks-and-spencer-online-payslip-login"
+  ]
+ },
+ {
+  "name": "Waste Connections",
+  "slug": "waste-connections",
+  "pv": 856,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "my-workday-login-waste-connections"
+  ]
+ },
+ {
+  "name": "AAFES",
+  "slug": "aafes",
+  "pv": 853,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "aafes-self-service-login-employees"
+  ]
+ },
+ {
+  "name": "Randstad",
+  "slug": "randstad",
+  "pv": 853,
+  "demand": 4,
+  "platforms": [],
+  "examples": [
+   "randstad-portal-payslip",
+   "randstad-pay-stub-portal",
+   "randstad-employee-portal",
+   "randstad-usa-employee-portal"
+  ]
+ },
+ {
+  "name": "Carnival",
+  "slug": "carnival",
+  "pv": 832,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "carnival-employee-portal"
+  ]
+ },
+ {
+  "name": "Taco Bell",
+  "slug": "taco-bell",
+  "pv": 820,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "taco-bell-pay-stub-portal"
+  ]
+ },
+ {
+  "name": "Sobeys",
+  "slug": "sobeys",
+  "pv": 817,
+  "demand": 3,
+  "platforms": [],
+  "examples": [
+   "sobeys-pay-stub-login",
+   "sobeys-employee-portal",
+   "ess-sobeys-portal-login"
+  ]
+ },
+ {
+  "name": "HPCL",
+  "slug": "hpcl",
+  "pv": 804,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "hpcl-retired-employees-portal"
+  ]
+ },
+ {
+  "name": "Cleveland Clinic",
+  "slug": "cleveland-clinic",
+  "pv": 795,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "workday-portal-cleveland-clinic"
+  ]
+ },
+ {
+  "name": "Mcdonald's",
+  "slug": "mcdonald-s",
+  "pv": 784,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "mcdonald-s-employee-portal-pay-stubs"
+  ]
+ },
+ {
+  "name": "NTPC",
+  "slug": "ntpc",
+  "pv": 784,
+  "demand": 3,
+  "platforms": [],
+  "examples": [
+   "ntpc-ess-employee-login",
+   "ntpc-ess-web-portal",
+   "ntpc-employee-self-service-login"
+  ]
+ },
+ {
+  "name": "Love Travel Stops",
+  "slug": "love-travel-stops",
+  "pv": 781,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "love-travel-stops-employee-portal"
+  ]
+ },
+ {
+  "name": "Rochester Regional Health",
+  "slug": "rochester-regional-health",
+  "pv": 769,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "rochester-regional-health-workday-login"
+  ]
+ },
+ {
+  "name": "Hills Market",
+  "slug": "hills-market",
+  "pv": 769,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "hills-vip-market-employee-login"
+  ]
+ },
+ {
+  "name": "Kellogg",
+  "slug": "kellogg",
+  "pv": 769,
+  "demand": 2,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kellogg-kronos-login",
+   "myhr-kellogg-login"
+  ]
+ },
+ {
+  "name": "Fedex",
+  "slug": "fedex",
+  "pv": 769,
+  "demand": 3,
+  "platforms": [
+   "ADP"
+  ],
+  "examples": [
+   "fedex-employee-payroll-portal",
+   "adp-payroll-portal-fedex",
+   "fedex-employee-portal"
+  ]
+ },
+ {
+  "name": "Honorhealth",
+  "slug": "honorhealth",
+  "pv": 767,
+  "demand": 2,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "ultipro-login-honorhealth",
+   "honorhealth-employee-portal"
+  ]
+ },
+ {
+  "name": "Mcdonalds",
+  "slug": "mcdonalds",
+  "pv": 765,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "mcdonalds-payslip-portal",
+   "mcdonalds-employee-portal-login"
+  ]
+ },
+ {
+  "name": "Dycom",
+  "slug": "dycom",
+  "pv": 765,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "dycom-employee-portal"
+  ]
+ },
+ {
+  "name": "Psa Healthcare",
+  "slug": "psa-healthcare",
+  "pv": 763,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "workday-psa-healthcare-login"
+  ]
+ },
+ {
+  "name": "Luxottica",
+  "slug": "luxottica",
+  "pv": 753,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "luxottica-kronos-login"
+  ]
+ },
+ {
+  "name": "Red Robin",
+  "slug": "red-robin",
+  "pv": 750,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "workday-login-red-robin"
+  ]
+ },
+ {
+  "name": "Adeccostaffing",
+  "slug": "adeccostaffing",
+  "pv": 748,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "ess-adeccostaffing-login"
+  ]
+ },
+ {
+  "name": "San Manuel",
+  "slug": "san-manuel",
+  "pv": 747,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "san-manuel-workday-login"
+  ]
+ },
+ {
+  "name": "Sttx",
+  "slug": "sttx",
+  "pv": 744,
+  "demand": 1,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "sttx-ultipro-login"
+  ]
+ },
+ {
+  "name": "Sainsburys",
+  "slug": "sainsburys",
+  "pv": 735,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "sainsburys-kronos-login"
+  ]
+ },
+ {
+  "name": "Carmax",
+  "slug": "carmax",
+  "pv": 730,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-login-carmax"
+  ]
+ },
+ {
+  "name": "Acadia Healthcare",
+  "slug": "acadia-healthcare",
+  "pv": 730,
+  "demand": 1,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "my-acadia-healthcare-ultipro-login"
+  ]
+ },
+ {
+  "name": "Ntpclakshya",
+  "slug": "ntpclakshya",
+  "pv": 718,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "ntpclakshya-ess-login"
+  ]
+ },
+ {
+  "name": "Teleperformance",
+  "slug": "teleperformance",
+  "pv": 716,
+  "demand": 4,
+  "platforms": [
+   "ADP"
+  ],
+  "examples": [
+   "teleperformance-employee-login",
+   "teleperformance-adp-login",
+   "teleperformance-employee-portal",
+   "teleperformance-payslip-login"
+  ]
+ },
+ {
+  "name": "Food City",
+  "slug": "food-city",
+  "pv": 705,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "food-city-employee-portal"
+  ]
+ },
+ {
+  "name": "Marriott",
+  "slug": "marriott",
+  "pv": 705,
+  "demand": 2,
+  "platforms": [
+   "ADP"
+  ],
+  "examples": [
+   "marriott-employee-portal",
+   "marriott-adp-portal"
+  ]
+ },
+ {
+  "name": "Ucentral Maverik",
+  "slug": "ucentral-maverik",
+  "pv": 697,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "ucentral-maverik-employee-login"
+  ]
+ },
+ {
+  "name": "Costco",
+  "slug": "costco",
+  "pv": 694,
+  "demand": 4,
+  "platforms": [],
+  "examples": [
+   "costco-employee-portal",
+   "ess-costco-com-login",
+   "costco-ess-portal",
+   "costco-pay-stub-portal"
+  ]
+ },
+ {
+  "name": "Aramark",
+  "slug": "aramark",
+  "pv": 691,
+  "demand": 3,
+  "platforms": [],
+  "examples": [
+   "aramark-employee-benefits-login",
+   "aramark-employee-portal",
+   "aramark-employee-email-portal"
+  ]
+ },
+ {
+  "name": "Primark",
+  "slug": "primark",
+  "pv": 670,
+  "demand": 2,
+  "platforms": [
+   "Kronos",
+   "Workday"
+  ],
+  "examples": [
+   "kronos-primark-login",
+   "myworkday-primark-com-login"
+  ]
+ },
+ {
+  "name": "Weis Markets",
+  "slug": "weis-markets",
+  "pv": 668,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "weis-markets-employee-portal"
+  ]
+ },
+ {
+  "name": "Priory",
+  "slug": "priory",
+  "pv": 664,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "priory-payslip-login"
+  ]
+ },
+ {
+  "name": "Aaa Cooper",
+  "slug": "aaa-cooper",
+  "pv": 661,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-aaa-cooper-login"
+  ]
+ },
+ {
+  "name": "Woolworths",
+  "slug": "woolworths",
+  "pv": 661,
+  "demand": 2,
+  "platforms": [
+   "PeopleSoft",
+   "SAP SuccessFactors"
+  ],
+  "examples": [
+   "woolworths-peoplesoft-login",
+   "successfactors-login-woolworths"
+  ]
+ },
+ {
+  "name": "Heartland Plus One",
+  "slug": "heartland-plus-one",
+  "pv": 657,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "heartland-plus-one-payroll-portal"
+  ]
+ },
+ {
+  "name": "Smithfield",
+  "slug": "smithfield",
+  "pv": 657,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "smithfield-employee-portal"
+  ]
+ },
+ {
+  "name": "Beaumont",
+  "slug": "beaumont",
+  "pv": 653,
+  "demand": 1,
+  "platforms": [
+   "PeopleSoft"
+  ],
+  "examples": [
+   "beaumont-peoplesoft-login"
+  ]
+ },
+ {
+  "name": "Serco Our Town",
+  "slug": "serco-our-town",
+  "pv": 650,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "serco-our-town-employee-portal"
+  ]
+ },
+ {
+  "name": "Smartlinx",
+  "slug": "smartlinx",
+  "pv": 640,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "smartlinx-employee-login"
+  ]
+ },
+ {
+  "name": "Geico",
+  "slug": "geico",
+  "pv": 631,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "geico-workday-portal"
+  ]
+ },
+ {
+  "name": "Sams Club Wire",
+  "slug": "sams-club-wire",
+  "pv": 631,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "sams-club-employee-login-wire"
+  ]
+ },
+ {
+  "name": "Cumberland Farms",
+  "slug": "cumberland-farms",
+  "pv": 631,
+  "demand": 1,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "ultipro-cumberland-farms-login"
+  ]
+ },
+ {
+  "name": "Ruths Chris",
+  "slug": "ruths-chris",
+  "pv": 626,
+  "demand": 2,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "ultipro-ruths-chris-login",
+   "ruths-chris-employee-portal"
+  ]
+ },
+ {
+  "name": "Tim Hortons Training",
+  "slug": "tim-hortons-training",
+  "pv": 622,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "tim-hortons-employee-training-portal"
+  ]
+ },
+ {
+  "name": "Brunswick Htmld",
+  "slug": "brunswick-htmld",
+  "pv": 618,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "myworkday-com-brunswick-login-htmld"
+  ]
+ },
+ {
+  "name": "Chicago Park District Paperless",
+  "slug": "chicago-park-district-paperless",
+  "pv": 616,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "chicago-park-district-paperless-employee-login"
+  ]
+ },
+ {
+  "name": "Sobeys Safeway",
+  "slug": "sobeys-safeway",
+  "pv": 614,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "sobeys-safeway-employee-login"
+  ]
+ },
+ {
+  "name": "Army Ted Total Development",
+  "slug": "army-ted-total-development",
+  "pv": 611,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "army-ted-total-employee-development-login"
+  ]
+ },
+ {
+  "name": "Bealls",
+  "slug": "bealls",
+  "pv": 609,
+  "demand": 2,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "bealls-inc-employee-portal",
+   "kronos-bealls-login"
+  ]
+ },
+ {
+  "name": "Central Mohawk",
+  "slug": "central-mohawk",
+  "pv": 606,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "employee-central-login-mohawk"
+  ]
+ },
+ {
+  "name": "Shacksource",
+  "slug": "shacksource",
+  "pv": 605,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "shacksource-employee-login"
+  ]
+ },
+ {
+  "name": "Chartwell Staffing",
+  "slug": "chartwell-staffing",
+  "pv": 603,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "chartwell-staffing-pay-stubs-login"
+  ]
+ },
+ {
+  "name": "Tractor Supply",
+  "slug": "tractor-supply",
+  "pv": 603,
+  "demand": 2,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-employee-login-tractor-supply",
+   "tractor-supply-employee-login"
+  ]
+ },
+ {
+  "name": "Https Ce0143li Webitrent Ce0143li_ess Index Html Trent",
+  "slug": "https-ce0143li-webitrent-ce0143li-ess-index-html-trent",
+  "pv": 602,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "https-ce0143li-webitrent-com-ce0143li_ess-ess-index-html-login-trent"
+  ]
+ },
+ {
+  "name": "Proliant",
+  "slug": "proliant",
+  "pv": 602,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "proliant-employee-login",
+   "proliant-employee-self-service-login"
+  ]
+ },
+ {
+  "name": "Nfi",
+  "slug": "nfi",
+  "pv": 596,
+  "demand": 2,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "nfi-ultipro-login",
+   "my-nfi-employee-login"
+  ]
+ },
+ {
+  "name": "Food Lion",
+  "slug": "food-lion",
+  "pv": 596,
+  "demand": 2,
+  "platforms": [
+   "PeopleSoft"
+  ],
+  "examples": [
+   "peoplesoft-login-food-lion",
+   "food-lion-employee-portal"
+  ]
+ },
+ {
+  "name": "Surrey Schools",
+  "slug": "surrey-schools",
+  "pv": 596,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "surrey-schools-self-service-portal"
+  ]
+ },
+ {
+  "name": "Four Seasons",
+  "slug": "four-seasons",
+  "pv": 591,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "myhr-four-seasons-workday-login"
+  ]
+ },
+ {
+  "name": "Bjs",
+  "slug": "bjs",
+  "pv": 587,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "bjs-employee-self-service-login",
+   "bjs-employee-portal"
+  ]
+ },
+ {
+  "name": "Petsmart",
+  "slug": "petsmart",
+  "pv": 587,
+  "demand": 2,
+  "platforms": [
+   "Kronos",
+   "ADP"
+  ],
+  "examples": [
+   "kronos-petsmart-login",
+   "petsmart-adp-portal"
+  ]
+ },
+ {
+  "name": "Genpact",
+  "slug": "genpact",
+  "pv": 584,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "genpact-employee-self-service-login"
+  ]
+ },
+ {
+  "name": "Capgemini Ex",
+  "slug": "capgemini-ex",
+  "pv": 582,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "capgemini-ex-employee-portal"
+  ]
+ },
+ {
+  "name": "Millers Ale House",
+  "slug": "millers-ale-house",
+  "pv": 582,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "millers-ale-house-employee-portal"
+  ]
+ },
+ {
+  "name": "Wellstar",
+  "slug": "wellstar",
+  "pv": 582,
+  "demand": 2,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "wellstar-kronos-employee-login",
+   "kronos-wellstar-login"
+  ]
+ },
+ {
+  "name": "Anfcorp Associate",
+  "slug": "anfcorp-associate",
+  "pv": 573,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "my-anfcorp-com-associate-login"
+  ]
+ },
+ {
+  "name": "Jack Box",
+  "slug": "jack-box",
+  "pv": 569,
+  "demand": 2,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "jack-in-the-box-employee-portal",
+   "jack-in-the-box-ultipro-login"
+  ]
+ },
+ {
+  "name": "Cargill",
+  "slug": "cargill",
+  "pv": 563,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "cargill-pay-stub-login"
+  ]
+ },
+ {
+  "name": "Bashas",
+  "slug": "bashas",
+  "pv": 561,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "bashas-paystub-portal"
+  ]
+ },
+ {
+  "name": "Nychhc",
+  "slug": "nychhc",
+  "pv": 558,
+  "demand": 1,
+  "platforms": [
+   "PeopleSoft"
+  ],
+  "examples": [
+   "nychhc-peoplesoft-login"
+  ]
+ },
+ {
+  "name": "IKEA Wfc",
+  "slug": "ikea-wfc",
+  "pv": 558,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-ikea-wfc-login"
+  ]
+ },
+ {
+  "name": "Nhif",
+  "slug": "nhif",
+  "pv": 552,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "nhif-self-service-portal"
+  ]
+ },
+ {
+  "name": "Conduent",
+  "slug": "conduent",
+  "pv": 535,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "conduent-connect-employee-login"
+  ]
+ },
+ {
+  "name": "Allsec Amazon",
+  "slug": "allsec-amazon",
+  "pv": 532,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "allsec-payroll-amazon-login"
+  ]
+ },
+ {
+  "name": "Air India Crew",
+  "slug": "air-india-crew",
+  "pv": 529,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "air-india-crew-portal"
+  ]
+ },
+ {
+  "name": "Ally Pulse",
+  "slug": "ally-pulse",
+  "pv": 527,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "ally-pulse-employee-login"
+  ]
+ },
+ {
+  "name": "Goodyear",
+  "slug": "goodyear",
+  "pv": 527,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "goodyear-self-service-portal"
+  ]
+ },
+ {
+  "name": "Intermountain",
+  "slug": "intermountain",
+  "pv": 524,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "intermountain-net-employee-login"
+  ]
+ },
+ {
+  "name": "Mypromedica",
+  "slug": "mypromedica",
+  "pv": 520,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "mypromedica-employee-login"
+  ]
+ },
+ {
+  "name": "Superdrug",
+  "slug": "superdrug",
+  "pv": 519,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "superdrug-payslip-login"
+  ]
+ },
+ {
+  "name": "Jio",
+  "slug": "jio",
+  "pv": 517,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "jio-ess-login"
+  ]
+ },
+ {
+  "name": "Bexar County Chris",
+  "slug": "bexar-county-chris",
+  "pv": 511,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "bexar-county-chris-ess-login"
+  ]
+ },
+ {
+  "name": "Tri City Foods",
+  "slug": "tri-city-foods",
+  "pv": 510,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "tri-city-foods-employee-portal"
+  ]
+ },
+ {
+  "name": "Dental Care Alliance",
+  "slug": "dental-care-alliance",
+  "pv": 507,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-login-dental-care-alliance"
+  ]
+ },
+ {
+  "name": "Sams Club",
+  "slug": "sams-club",
+  "pv": 506,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "sams-club-pay-stub-portal"
+  ]
+ },
+ {
+  "name": "Carnival Crew",
+  "slug": "carnival-crew",
+  "pv": 505,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "carnival-crew-portal"
+  ]
+ },
+ {
+  "name": "Cracker Barrel",
+  "slug": "cracker-barrel",
+  "pv": 505,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "cracker-barrel-employee-schedule-portal"
+  ]
+ },
+ {
+  "name": "Bickford",
+  "slug": "bickford",
+  "pv": 502,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-employee-login-bickford"
+  ]
+ },
+ {
+  "name": "Zaxby's",
+  "slug": "zaxby-s",
+  "pv": 500,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "zaxby-s-employee-portal"
+  ]
+ },
+ {
+  "name": "Merakey",
+  "slug": "merakey",
+  "pv": 500,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "merakey-employee-portal"
+  ]
+ },
+ {
+  "name": "Penneys",
+  "slug": "penneys",
+  "pv": 499,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "my-workday-penneys-login"
+  ]
+ },
+ {
+  "name": "Well Scheduled",
+  "slug": "well-scheduled",
+  "pv": 498,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "my-time-well-scheduled-employee-login"
+  ]
+ },
+ {
+  "name": "Five Star Senior Living",
+  "slug": "five-star-senior-living",
+  "pv": 498,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "five-star-senior-living-workday-login"
+  ]
+ },
+ {
+  "name": "Itrent",
+  "slug": "itrent",
+  "pv": 496,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "itrent-employee-self-service-portal"
+  ]
+ },
+ {
+  "name": "Sutter Health",
+  "slug": "sutter-health",
+  "pv": 493,
+  "demand": 1,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "sutter-health-employee-kronos-login"
+  ]
+ },
+ {
+  "name": "Conagra Brands",
+  "slug": "conagra-brands",
+  "pv": 491,
+  "demand": 1,
+  "platforms": [
+   "Workday"
+  ],
+  "examples": [
+   "workday-conagra-brands-login"
+  ]
+ },
+ {
+  "name": "Torrid",
+  "slug": "torrid",
+  "pv": 491,
+  "demand": 1,
+  "platforms": [
+   "UltiPro"
+  ],
+  "examples": [
+   "torrid-ultipro-login"
+  ]
+ },
+ {
+  "name": "Bgcforme",
+  "slug": "bgcforme",
+  "pv": 490,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "bgcforme-employee-portal"
+  ]
+ },
+ {
+  "name": "Buffalo Wild Wings",
+  "slug": "buffalo-wild-wings",
+  "pv": 490,
+  "demand": 2,
+  "platforms": [],
+  "examples": [
+   "buffalo-wild-wings-employee-portal",
+   "buffalo-wild-wings-employee-self-service-login"
+  ]
+ },
+ {
+  "name": "Whole Foods",
+  "slug": "whole-foods",
+  "pv": 486,
+  "demand": 3,
+  "platforms": [
+   "Kronos"
+  ],
+  "examples": [
+   "kronos-whole-foods-portal",
+   "whole-foods-employee-portal",
+   "kronos-employee-portal-whole-foods"
+  ]
+ },
+ {
+  "name": "Gabes",
+  "slug": "gabes",
+  "pv": 483,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "gabes-employee-login"
+  ]
+ },
+ {
+  "name": "Aspen Snowmass",
+  "slug": "aspen-snowmass",
+  "pv": 483,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "aspen-snowmass-employee-portal"
+  ]
+ },
+ {
+  "name": "Mach Recruitment",
+  "slug": "mach-recruitment",
+  "pv": 480,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "mach-recruitment-payroll-login"
+  ]
+ },
+ {
+  "name": "Walgreens At",
+  "slug": "walgreens-at",
+  "pv": 480,
+  "demand": 1,
+  "platforms": [],
+  "examples": [
+   "walgreens-employees-at-home-portal"
+  ]
+ }
+]
