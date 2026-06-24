@@ -74,12 +74,12 @@ export function Header() {
   // when the active pill's border appears.
   const linkCls = (href: string) =>
     href === activeHref
-      ? "px-2 py-0.5 rounded-sm font-bold bg-[var(--accent)] border-[1.5px] border-foreground"
+      ? "px-2 py-0.5 rounded-sm font-bold bg-[var(--accent)] text-[var(--accent-fg)] border-[1.5px] border-foreground"
       : "px-2 py-0.5 rounded-sm border-[1.5px] border-transparent hover:underline";
 
   const mobileItemCls = (href: string) =>
     href === activeHref
-      ? "px-3 py-2.5 rounded-sm font-bold bg-[var(--accent)] border-[1.5px] border-foreground"
+      ? "px-3 py-2.5 rounded-sm font-bold bg-[var(--accent)] text-[var(--accent-fg)] border-[1.5px] border-foreground"
       : "px-3 py-2.5 rounded-sm border-[1.5px] border-transparent hover:bg-foreground/5";
 
   const trigger = () => {
@@ -123,7 +123,7 @@ export function Header() {
               onClick={() => setMoreOpen((v) => !v)}
               className={`flex items-center gap-0.5 cursor-pointer px-2 py-0.5 rounded-sm border-[1.5px] ${
                 moreActive || moreOpen
-                  ? "font-bold bg-[var(--accent)] border-foreground"
+                  ? "font-bold bg-[var(--accent)] text-[var(--accent-fg)] border-foreground"
                   : "border-transparent text-muted-2 hover:text-foreground"
               }`}
             >
@@ -147,7 +147,7 @@ export function Header() {
                     onClick={() => setMoreOpen(false)}
                     className={
                       i.href === activeHref
-                        ? "px-1.5 py-0.5 rounded-sm font-bold bg-[var(--accent)]"
+                        ? "px-1.5 py-0.5 rounded-sm font-bold bg-[var(--accent)] text-[var(--accent-fg)]"
                         : "px-1.5 py-0.5 rounded-sm hover:underline"
                     }
                   >
@@ -165,12 +165,12 @@ export function Header() {
             aria-label={`Saved results${savedCount ? ` (${savedCount})` : ""}`}
             title="Your saved results"
             className={`relative inline-flex items-center justify-center w-9 h-9 rounded-sm border-[1.5px] border-foreground ${
-              pathname === "/saved" ? "bg-[var(--accent)]" : "bg-background"
+              pathname === "/saved" ? "bg-[var(--accent)] text-[var(--accent-fg)]" : "bg-background"
             }`}
           >
             <Bookmark size={16} strokeWidth={2.5} className={savedCount > 0 ? "fill-current" : ""} />
             {savedCount > 0 && (
-              <span className="absolute -top-1.5 -right-1.5 min-w-[18px] h-[18px] px-1 rounded-full bg-[var(--accent)] border-[1.5px] border-foreground text-[10px] font-bold leading-none flex items-center justify-center">
+              <span className="absolute -top-1.5 -right-1.5 min-w-[18px] h-[18px] px-1 rounded-full bg-[var(--accent)] text-[var(--accent-fg)] border-[1.5px] border-foreground text-[10px] font-bold leading-none flex items-center justify-center">
                 {savedCount}
               </span>
             )}
