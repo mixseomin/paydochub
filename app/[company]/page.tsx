@@ -119,6 +119,18 @@ export default async function CompanyPage({
             </p>
           )}
 
+          {/* Answer-first summary (for readers + AI answer engines) */}
+          <div className="card p-5 mt-6 border-l-4" style={{ borderLeftColor: "var(--accent)" }}>
+            <div className="text-xs font-semibold uppercase tracking-wider text-teal mb-2">Quick answer</div>
+            <p className="text-base leading-relaxed">
+              To access your {e.name} pay information, log in to the {e.name} employee portal
+              {platformList ? ` (${platformList})` : ""} with your employee ID and password.
+              Your <strong>pay stubs</strong> are in the Pay or Payroll section, and your{" "}
+              <strong>W-2</strong> is under Tax Documents, available by <strong>January 31</strong>{" "}
+              each year. No portal access? Contact {e.name} HR or payroll to request copies.
+            </p>
+          </div>
+
           {/* 1. Login */}
           <Section title={`Access your ${e.name} employee portal`}>
             <ol className="list-decimal pl-5 space-y-2 text-base leading-relaxed">
