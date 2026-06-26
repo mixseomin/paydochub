@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Public_Sans, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { CommandPalette } from "./components/CommandPalette";
@@ -45,6 +46,11 @@ export const metadata: Metadata = {
     title: "PayDocHub",
     statusBarStyle: "default",
   },
+  other: {
+    // AdSense site verification (soccerstreamstop pub) - meta in <head> is the
+    // most reliable verifier; the adsbygoogle.js script below serves ads.
+    "google-adsense-account": "ca-pub-9893054287799556",
+  },
 };
 
 export const viewport: Viewport = {
@@ -67,6 +73,12 @@ export default function RootLayout({
         <CommandPalette />
         <Analytics />
         <MonetizationScripts />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9893054287799556"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
