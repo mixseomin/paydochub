@@ -123,18 +123,47 @@ export default async function CompanyPage({
               {e.name} Employee Portal: Login, Pay Stub &amp; W-2
             </h1>
           </div>
-          <p className="text-lg text-muted leading-relaxed mb-2">
-            A plain-English guide to logging in to your {e.name} employee account, viewing
-            or downloading your pay stub, and getting your {e.name} W-2 tax form.
+          <p className="text-lg text-muted leading-relaxed mb-6">
+            Log in to your {e.name} employee account, view or download your pay stub, and get
+            your {e.name} W-2 tax form.
           </p>
-          {platformList && (
-            <p className="text-base text-muted leading-relaxed">
-              {e.name} uses {platformList} for time, scheduling, and pay access.
-            </p>
+
+          {/* Hero: framed live portal screenshot + official link (the convincing visual, up top) */}
+          {(e.shot || e.portal) && (
+            <figure className="mb-8">
+              <div className="rounded-xl border border-card-border bg-white shadow-md overflow-hidden">
+                <div className="flex items-center gap-2 px-3 py-2 border-b border-card-border" style={{ background: "var(--surface-2, #f1f3f5)" }}>
+                  <span className="flex gap-1.5 shrink-0">
+                    <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
+                    <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
+                    <span className="h-3 w-3 rounded-full bg-[#28c840]" />
+                  </span>
+                  {e.portal && (
+                    <span className="mono text-xs text-foreground/70 truncate flex-1 min-w-0">🔒 {portalHost}</span>
+                  )}
+                  <span className="text-[11px] font-semibold text-teal shrink-0 ml-auto">✓ Verified live · {PORTAL_CHECKED}</span>
+                </div>
+                {e.shot ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={`/shots/${e.slug}.webp`} alt={`${e.name} employee login portal screenshot`}
+                    width={1000} height={672} className="block w-full" />
+                ) : (
+                  <div className="px-4 py-12 text-center text-sm text-muted">
+                    Official {e.name} employee sign-in page
+                  </div>
+                )}
+              </div>
+              {e.portal && (
+                <a href={e.portal} target="_blank" rel="noopener nofollow"
+                  className="btn btn-primary inline-flex items-center gap-2 no-underline mt-3">
+                  Go to the official {e.name} portal <ArrowRight size={15} />
+                </a>
+              )}
+            </figure>
           )}
 
           {/* Answer-first summary (for readers + AI answer engines) */}
-          <div className="card p-5 mt-6 border-l-4" style={{ borderLeftColor: "var(--accent)" }}>
+          <div className="card p-5 border-l-4" style={{ borderLeftColor: "var(--accent)" }}>
             <div className="text-xs font-semibold uppercase tracking-wider text-teal mb-2">Quick answer</div>
             <p className="text-base leading-relaxed">
               To access your {e.name} pay information, log in to the {e.name} employee portal
@@ -146,27 +175,7 @@ export default async function CompanyPage({
           </div>
 
           {/* 1. Login */}
-          <Section title={`Access your ${e.name} employee portal`}>
-            {e.portal && (
-              <div className="mb-4">
-                <a href={e.portal} target="_blank" rel="noopener nofollow"
-                  className="btn btn-primary inline-flex items-center gap-2 no-underline">
-                  Go to the official {e.name} portal
-                  <span className="mono text-xs opacity-75">{portalHost}</span>
-                  <ArrowRight size={15} />
-                </a>
-                <p className="text-xs mt-1.5 flex items-center gap-2 flex-wrap">
-                  <span className="text-teal font-semibold">✓ Verified live · checked {PORTAL_CHECKED}</span>
-                  <span className="text-muted-2">Opens {e.name}&apos;s official site in a new tab.</span>
-                </p>
-                {e.shot && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={`/shots/${e.slug}.webp`} alt={`${e.name} employee login portal screenshot`}
-                    width={1000} height={672} loading="lazy"
-                    className="mt-3 w-full max-w-md rounded-md border border-card-border" />
-                )}
-              </div>
-            )}
+          <Section step={1} tone="var(--accent)" title={`Access your ${e.name} employee portal`}>
             <ol className="list-decimal pl-5 space-y-2 text-base leading-relaxed">
               <li>
                 Go to the official {e.name} employee portal
@@ -183,7 +192,7 @@ export default async function CompanyPage({
           </Section>
 
           {/* 2. Pay stub */}
-          <Section title={`How to get your ${e.name} pay stub`}>
+          <Section step={2} tone="var(--teal)" title={`How to get your ${e.name} pay stub`}>
             <ol className="list-decimal pl-5 space-y-2 text-base leading-relaxed">
               <li>Log in to the {e.name} employee portal.</li>
               <li>Open the Pay or Payroll section (sometimes labeled &quot;Pay statements&quot; or &quot;Earnings&quot;).</li>
@@ -193,7 +202,7 @@ export default async function CompanyPage({
           </Section>
 
           {/* 3. W-2 */}
-          <Section title={`How to get your ${e.name} W-2`}>
+          <Section step={3} tone="#e8590c" title={`How to get your ${e.name} W-2`}>
             <p className="text-base leading-relaxed mb-3">
               Employers must furnish your W-2 by <strong>January 31</strong> each year. To get your{" "}
               {e.name} W-2, sign in to the employee portal and open the Tax Documents (or
@@ -338,10 +347,34 @@ export default async function CompanyPage({
   );
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({
+  title,
+  step,
+  tone,
+  children,
+}: {
+  title: string;
+  step?: number;
+  tone?: string;
+  children: React.ReactNode;
+}) {
+  const colored = step != null && !!tone;
   return (
     <section className="mt-10">
-      <h2 className="text-xl font-bold mb-4">{title}</h2>
+      <h2
+        className={`text-xl font-bold mb-4 flex items-center gap-3 ${colored ? "rounded-lg px-3 py-2.5" : ""}`}
+        style={colored ? { background: `color-mix(in srgb, ${tone} 10%, transparent)` } : undefined}
+      >
+        {step != null && (
+          <span
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-sm font-black text-white"
+            style={{ background: tone }}
+          >
+            {step}
+          </span>
+        )}
+        {title}
+      </h2>
       {children}
     </section>
   );
