@@ -17,7 +17,8 @@
   "platforms": [],
   "examples": [
    "hobby-lobby-employee-portal"
-  ]
+  ],
+  "portal": "https://employee.hobbylobby.com/"
  },
  {
   "name": "Byjus",
@@ -39,7 +40,8 @@
   ],
   "examples": [
    "ultipro-login-salvation-army"
-  ]
+  ],
+  "portal": "https://n24.ultipro.com/mobile/app/pages/login.aspx?Alias=Ameri793"
  },
  {
   "name": "Best Buy",
@@ -50,7 +52,8 @@
   "examples": [
    "best-buy-etk-employee-portal",
    "best-buy-employee-portal-password-reset"
-  ]
+  ],
+  "portal": "https://connect.bestbuy.com/"
  },
  {
   "name": "IKEA",
@@ -65,7 +68,8 @@
    "ikea-payslip-portal",
    "ess-login-ikea",
    "kronos-ikea-portal"
-  ]
+  ],
+  "portal": "https://services.ikea.com/s/login/"
  },
  {
   "name": "Kohls",
@@ -77,7 +81,8 @@
   ],
   "examples": [
    "kohls-kronos-schedule-login"
-  ]
+  ],
+  "portal": "https://myhr.kohls.com/"
  },
  {
   "name": "Meridian",
@@ -101,7 +106,8 @@
   "examples": [
    "dgme-employee-portal-w2",
    "dgme-employee-access-login"
-  ]
+  ],
+  "portal": "https://websso.dolgen.net/ssoa/default.aspx?siteid=72"
  },
  {
   "name": "Accenture",
@@ -112,7 +118,8 @@
   "examples": [
    "accenture-employee-referral-portal",
    "accenture-employee-portal-portal"
-  ]
+  ],
+  "portal": "https://portal.accenture.com/"
  },
  {
   "name": "Genserv",
@@ -169,7 +176,8 @@
    "www-lowes-employee-portal",
    "lowes-employee-portal-w2",
    "lowes-pay-stub-portal"
-  ]
+  ],
+  "portal": "https://www.myloweslife.com/"
  },
  {
   "name": "Rack Room Shoes",
@@ -190,7 +198,8 @@
   "platforms": [],
   "examples": [
    "brookshire-grocery-company-employee-portal"
-  ]
+  ],
+  "portal": "https://token.bgcforme.com/secureauth18/SecureAuth.aspx"
  },
  {
   "name": "Fresh Market",
@@ -242,7 +251,8 @@
   ],
   "examples": [
    "ceridian-dayforce-login"
-  ]
+  ],
+  "portal": "https://www.dayforcehcm.com/mydayforce/login.aspx"
  },
  {
   "name": "Stater Bros",
@@ -274,7 +284,8 @@
   "examples": [
    "scheduling-caesars-ess-login",
    "caesars-hub-employee-login"
-  ]
+  ],
+  "portal": "https://caesarssmart.my.site.com/TotalRep/login"
  },
  {
   "name": "Shawinc",
@@ -286,7 +297,8 @@
   ],
   "examples": [
    "myworkday-shawinc-login"
-  ]
+  ],
+  "portal": "https://wd1.myworkday.com/shawinc/login.htmld"
  },
  {
   "name": "Chewy",
@@ -296,7 +308,8 @@
   "platforms": [],
   "examples": [
    "chewy-employee-portal"
-  ]
+  ],
+  "portal": "https://wd5.myworkday.com/chewy/login.htmld"
  },
  {
   "name": "Dunkin Donuts",
@@ -388,7 +401,8 @@
   ],
   "examples": [
    "workday-accentcare-login"
-  ]
+  ],
+  "portal": "https://wd5.myworkday.com/accentcare/login.htmld"
  },
  {
   "name": "Leprino",
@@ -430,7 +444,8 @@
   "examples": [
    "landrys-employee-portal-login",
    "landrys-employee-portal"
-  ]
+  ],
+  "portal": "https://landryserp.ldry.com/OA_HTML/AppsLocalLogin.jsp"
  },
  {
   "name": "EIL",
@@ -472,7 +487,8 @@
   ],
   "examples": [
    "my-workday-login-waste-connections"
-  ]
+  ],
+  "portal": "https://wd1.myworkday.com/wasteconnections/d/home.htmld"
  },
  {
   "name": "AAFES",
@@ -482,7 +498,8 @@
   "platforms": [],
   "examples": [
    "aafes-self-service-login-employees"
-  ]
+  ],
+  "portal": "https://odin.aafes.com/nep/logon/logon.aspx"
  },
  {
   "name": "Randstad",
@@ -505,7 +522,8 @@
   "platforms": [],
   "examples": [
    "carnival-employee-portal"
-  ]
+  ],
+  "portal": "https://myperformance.carnival.com/ords/f?p=eval"
  },
  {
   "name": "Taco Bell",
@@ -515,7 +533,8 @@
   "platforms": [],
   "examples": [
    "taco-bell-pay-stub-portal"
-  ]
+  ],
+  "portal": "https://mytacobell.yum.com/"
  },
  {
   "name": "Sobeys",
@@ -549,7 +568,8 @@
   ],
   "examples": [
    "workday-portal-cleveland-clinic"
-  ]
+  ],
+  "portal": "https://wd1.myworkday.com/ccf/d/home.htmld"
  },
  {
   "name": "Mcdonald's",
@@ -559,7 +579,8 @@
   "platforms": [],
   "examples": [
    "mcdonald-s-employee-portal-pay-stubs"
-  ]
+  ],
+  "portal": "https://account.mcd.com/"
  },
  {
   "name": "NTPC",
@@ -571,7 +592,8 @@
    "ntpc-ess-employee-login",
    "ntpc-ess-web-portal",
    "ntpc-employee-self-service-login"
-  ]
+  ],
+  "portal": "https://samvaad.ntpc.co.in/"
  },
  {
   "name": "Love Travel Stops",
@@ -581,7 +603,8 @@
   "platforms": [],
   "examples": [
    "love-travel-stops-employee-portal"
-  ]
+  ],
+  "portal": "https://theheartbeat.loves.com/"
  },
  {
   "name": "Rochester Regional Health",
@@ -593,7 +616,8 @@
   ],
   "examples": [
    "rochester-regional-health-workday-login"
-  ]
+  ],
+  "portal": "https://wd5.myworkday.com/rrhs/d/home.htmld"
  },
  {
   "name": "Hills Market",
@@ -616,7 +640,8 @@
   "examples": [
    "kellogg-kronos-login",
    "myhr-kellogg-login"
-  ]
+  ],
+  "portal": "https://kellogg-wfts.kronos.net/login"
  },
  {
   "name": "Fedex",
@@ -654,7 +679,8 @@
   "examples": [
    "mcdonalds-payslip-portal",
    "mcdonalds-employee-portal-login"
-  ]
+  ],
+  "portal": "https://account.mcd.com/"
  },
  {
   "name": "Dycom",
@@ -676,7 +702,8 @@
   ],
   "examples": [
    "workday-psa-healthcare-login"
-  ]
+  ],
+  "portal": "https://wd1.myworkday.com/psahealthcare/d/home.htmld"
  },
  {
   "name": "Luxottica",
@@ -688,7 +715,8 @@
   ],
   "examples": [
    "luxottica-kronos-login"
-  ]
+  ],
+  "portal": "https://luxottica.kronos.net/wfc/logon"
  },
  {
   "name": "Red Robin",
@@ -700,7 +728,8 @@
   ],
   "examples": [
    "workday-login-red-robin"
-  ]
+  ],
+  "portal": "https://wd1.myworkday.com/redrobin/d/home.htmld"
  },
  {
   "name": "Adeccostaffing",
@@ -710,7 +739,8 @@
   "platforms": [],
   "examples": [
    "ess-adeccostaffing-login"
-  ]
+  ],
+  "portal": "https://myadecco.my.site.com/login"
  },
  {
   "name": "San Manuel",
@@ -722,7 +752,8 @@
   ],
   "examples": [
    "san-manuel-workday-login"
-  ]
+  ],
+  "portal": "https://wd1.myworkday.com/sanmanuel/d/home.htmld"
  },
  {
   "name": "Sttx",
@@ -734,7 +765,8 @@
   ],
   "examples": [
    "sttx-ultipro-login"
-  ]
+  ],
+  "portal": "https://sttx.ultipro.com"
  },
  {
   "name": "Sainsburys",
@@ -746,7 +778,8 @@
   ],
   "examples": [
    "sainsburys-kronos-login"
-  ]
+  ],
+  "portal": "https://sainsburys.kronos.net/wfc/logon"
  },
  {
   "name": "Carmax",
@@ -758,7 +791,8 @@
   ],
   "examples": [
    "kronos-login-carmax"
-  ]
+  ],
+  "portal": "https://www.mykmxhr.com"
  },
  {
   "name": "Acadia Healthcare",
@@ -770,7 +804,8 @@
   ],
   "examples": [
    "my-acadia-healthcare-ultipro-login"
-  ]
+  ],
+  "portal": "https://acadia.ultipro.com"
  },
  {
   "name": "Ntpclakshya",
@@ -780,7 +815,8 @@
   "platforms": [],
   "examples": [
    "ntpclakshya-ess-login"
-  ]
+  ],
+  "portal": "https://teamup.ntpclakshya.co.in/TeamUp/Account/Login.aspx"
  },
  {
   "name": "Teleperformance",
@@ -795,7 +831,8 @@
    "teleperformance-adp-login",
    "teleperformance-employee-portal",
    "teleperformance-payslip-login"
-  ]
+  ],
+  "portal": "https://mytp.teleperformance.com/"
  },
  {
   "name": "Food City",
@@ -805,7 +842,8 @@
   "platforms": [],
   "examples": [
    "food-city-employee-portal"
-  ]
+  ],
+  "portal": "https://www.ourfoodcity.com/"
  },
  {
   "name": "Marriott",
@@ -818,7 +856,8 @@
   "examples": [
    "marriott-employee-portal",
    "marriott-adp-portal"
-  ]
+  ],
+  "portal": "https://www.4myhr.com"
  },
  {
   "name": "Ucentral Maverik",
@@ -828,7 +867,8 @@
   "platforms": [],
   "examples": [
    "ucentral-maverik-employee-login"
-  ]
+  ],
+  "portal": "https://mymaverik.com"
  },
  {
   "name": "Costco",
@@ -841,7 +881,8 @@
    "ess-costco-com-login",
    "costco-ess-portal",
    "costco-pay-stub-portal"
-  ]
+  ],
+  "portal": "https://login.costco.com"
  },
  {
   "name": "Aramark",
@@ -853,7 +894,8 @@
    "aramark-employee-benefits-login",
    "aramark-employee-portal",
    "aramark-employee-email-portal"
-  ]
+  ],
+  "portal": "https://myidentity.aramark.com/identityiq/"
  },
  {
   "name": "Primark",
@@ -867,7 +909,8 @@
   "examples": [
    "kronos-primark-login",
    "myworkday-primark-com-login"
-  ]
+  ],
+  "portal": "https://identity.primark.com/"
  },
  {
   "name": "Weis Markets",
@@ -877,7 +920,8 @@
   "platforms": [],
   "examples": [
    "weis-markets-employee-portal"
-  ]
+  ],
+  "portal": "https://weis.logile.com/myportal/pmobile/login.seam"
  },
  {
   "name": "Priory",
@@ -887,7 +931,8 @@
   "platforms": [],
   "examples": [
    "priory-payslip-login"
-  ]
+  ],
+  "portal": "https://together.priorygroup.com/login"
  },
  {
   "name": "Aaa Cooper",
@@ -913,7 +958,8 @@
   "examples": [
    "woolworths-peoplesoft-login",
    "successfactors-login-woolworths"
-  ]
+  ],
+  "portal": "https://performancemanager10.successfactors.com/login?company=Woolworths"
  },
  {
   "name": "Heartland Plus One",

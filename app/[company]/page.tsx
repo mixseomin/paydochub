@@ -41,6 +41,8 @@ export default async function CompanyPage({
 
   const platformList = e.platforms.length ? e.platforms.join(" and ") : "";
   const related = relatedEmployers(e.slug);
+  let portalHost = "";
+  try { if (e.portal) portalHost = new URL(e.portal).hostname.replace(/^www\./, ""); } catch {}
 
   const faqs = [
     {
@@ -133,6 +135,17 @@ export default async function CompanyPage({
 
           {/* 1. Login */}
           <Section title={`Access your ${e.name} employee portal`}>
+            {e.portal && (
+              <div className="mb-4">
+                <a href={e.portal} target="_blank" rel="noopener nofollow"
+                  className="btn btn-primary inline-flex items-center gap-2 no-underline">
+                  Go to the official {e.name} portal
+                  <span className="mono text-xs opacity-75">{portalHost}</span>
+                  <ArrowRight size={15} />
+                </a>
+                <p className="text-xs text-muted-2 mt-1.5">Opens {e.name}&apos;s official site in a new tab.</p>
+              </div>
+            )}
             <ol className="list-decimal pl-5 space-y-2 text-base leading-relaxed">
               <li>
                 Go to the official {e.name} employee portal
@@ -222,6 +235,16 @@ export default async function CompanyPage({
               {e.name} quick facts
             </div>
             <dl className="space-y-2.5 text-sm">
+              {e.portal && (
+                <div>
+                  <dt className="text-muted">Official portal</dt>
+                  <dd>
+                    <a href={e.portal} target="_blank" rel="noopener nofollow" className="font-semibold text-accent hover:underline break-all">
+                      {portalHost} ↗
+                    </a>
+                  </dd>
+                </div>
+              )}
               {platformList && (
                 <div>
                   <dt className="text-muted">Payroll system</dt>

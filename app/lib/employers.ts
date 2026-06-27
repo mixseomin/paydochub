@@ -7,6 +7,7 @@ export type Employer = {
   demand: number;
   platforms: string[];
   examples: string[];
+  portal?: string; // verified official employee-portal URL (researched employers only)
 };
 
 // Already sorted by page-views (pv) descending in the source file.
