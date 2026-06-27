@@ -161,8 +161,8 @@ export default async function CompanyPage({
                 </p>
                 {e.shot && (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={`/shots/${e.slug}.png`} alt={`${e.name} employee login portal screenshot`}
-                    width={1280} height={860} loading="lazy"
+                  <img src={`/shots/${e.slug}.webp`} alt={`${e.name} employee login portal screenshot`}
+                    width={1000} height={672} loading="lazy"
                     className="mt-3 w-full max-w-md rounded-md border border-card-border" />
                 )}
               </div>
