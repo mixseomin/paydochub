@@ -154,7 +154,7 @@ export default async function CompanyPage({
                 )}
               </div>
               {e.portal && (
-                <a href={e.portal} target="_blank" rel="noopener nofollow"
+                <a href={e.portal} target="_blank" rel="noopener nofollow noreferrer"
                   className="btn btn-primary inline-flex items-center gap-2 no-underline mt-3">
                   Go to the official {e.name} portal <ArrowRight size={15} />
                 </a>
@@ -269,7 +269,7 @@ export default async function CompanyPage({
                 <div>
                   <dt className="text-muted">Official portal</dt>
                   <dd>
-                    <a href={e.portal} target="_blank" rel="noopener nofollow" className="font-semibold text-accent hover:underline break-all">
+                    <a href={e.portal} target="_blank" rel="noopener nofollow noreferrer" className="font-semibold text-accent hover:underline break-all">
                       {portalHost} ↗
                     </a>
                     <span className="block text-xs text-teal font-semibold mt-0.5">✓ Verified live · {PORTAL_CHECKED}</span>
