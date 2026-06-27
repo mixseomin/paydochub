@@ -8,6 +8,8 @@ import { EMPLOYERS, findEmployer, relatedEmployers } from "../lib/employers";
 
 export const dynamicParams = false;
 
+const PORTAL_CHECKED = "Jun 2026"; // official portals curl-verified live on this date
+
 export function generateStaticParams() {
   return EMPLOYERS.map((e) => ({ company: e.slug }));
 }
@@ -108,9 +110,19 @@ export default async function CompanyPage({
       <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-10">
         {/* MAIN COLUMN */}
         <article className="min-w-0">
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            {e.name} Employee Portal: Login, Pay Stub &amp; W-2
-          </h1>
+          <div className="flex items-center gap-3 mb-4">
+            {e.logo ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={`/logos/${e.slug}.png`} alt={`${e.name} logo`} width={44} height={44}
+                className="h-11 w-11 shrink-0 object-contain rounded-md bg-white border border-card-border p-1" />
+            ) : (
+              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-md font-black text-xl"
+                style={{ background: "var(--accent)", color: "var(--accent-fg)" }}>{e.name.charAt(0)}</span>
+            )}
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+              {e.name} Employee Portal: Login, Pay Stub &amp; W-2
+            </h1>
+          </div>
           <p className="text-lg text-muted leading-relaxed mb-2">
             A plain-English guide to logging in to your {e.name} employee account, viewing
             or downloading your pay stub, and getting your {e.name} W-2 tax form.
@@ -143,7 +155,16 @@ export default async function CompanyPage({
                   <span className="mono text-xs opacity-75">{portalHost}</span>
                   <ArrowRight size={15} />
                 </a>
-                <p className="text-xs text-muted-2 mt-1.5">Opens {e.name}&apos;s official site in a new tab.</p>
+                <p className="text-xs mt-1.5 flex items-center gap-2 flex-wrap">
+                  <span className="text-teal font-semibold">✓ Verified live · checked {PORTAL_CHECKED}</span>
+                  <span className="text-muted-2">Opens {e.name}&apos;s official site in a new tab.</span>
+                </p>
+                {e.shot && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={`/shots/${e.slug}.png`} alt={`${e.name} employee login portal screenshot`}
+                    width={1280} height={860} loading="lazy"
+                    className="mt-3 w-full max-w-md rounded-md border border-card-border" />
+                )}
               </div>
             )}
             <ol className="list-decimal pl-5 space-y-2 text-base leading-relaxed">
@@ -242,6 +263,7 @@ export default async function CompanyPage({
                     <a href={e.portal} target="_blank" rel="noopener nofollow" className="font-semibold text-accent hover:underline break-all">
                       {portalHost} ↗
                     </a>
+                    <span className="block text-xs text-teal font-semibold mt-0.5">✓ Verified live · {PORTAL_CHECKED}</span>
                   </dd>
                 </div>
               )}

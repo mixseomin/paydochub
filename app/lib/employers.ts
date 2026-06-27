@@ -8,6 +8,8 @@ export type Employer = {
   platforms: string[];
   examples: string[];
   portal?: string; // verified official employee-portal URL (researched employers only)
+  logo?: boolean;  // true when public/logos/<slug>.png exists (Wikidata-sourced)
+  shot?: boolean;  // true when public/shots/<slug>.png exists (portal screenshot)
 };
 
 // Already sorted by page-views (pv) descending in the source file.
