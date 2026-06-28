@@ -25,8 +25,8 @@ export async function generateMetadata({
   const e = findEmployer(company);
   if (!e) return {};
   return {
-    title: `${e.name} Employee Login, Pay Stub & W-2 Access (2026)`,
-    description: `How to log in to your ${e.name} employee portal, view or download your pay stub, and get your ${e.name} W-2 tax form. A plain-English ${e.name} access guide for 2026.`,
+    title: `${e.name} Pay Stub & W-2 Access: Employee Portal Login Guide (2026)`,
+    description: `Step-by-step guide to your ${e.name} pay stub, W-2, and employee portal login${e.portal ? ", plus a verified link to the official portal" : ""}. Plain English, updated for 2026.`,
     alternates: { canonical: `/${e.slug}` },
     openGraph: { url: `/${e.slug}` },
   };
