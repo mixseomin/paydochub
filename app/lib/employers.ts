@@ -22,9 +22,24 @@ export function findEmployer(slug: string): Employer | undefined {
 }
 
 /**
- * Next-highest-pv employers other than the one given. Since EMPLOYERS is
- * sorted by pv desc, "the rest of the list minus self" is already ranked.
+ * Related employers for the in-page "Other employers" links. Mixes 2 popular
+ * anchors (highest pv = the pages worth funneling link equity to) with forward
+ * neighbors in the pv-sorted ring. The ring matters for crawl: every tail page
+ * then gets inbound links from its neighbors, not just the /companies hub, so
+ * link equity spreads across all 600 instead of pooling on the same top 6.
  */
 export function relatedEmployers(slug: string, n = 6): Employer[] {
-  return EMPLOYERS.filter((e) => e.slug !== slug).slice(0, n);
+  const i = EMPLOYERS.findIndex((e) => e.slug === slug);
+  if (i < 0) return EMPLOYERS.slice(0, n);
+  const out: Employer[] = [];
+  const seen = new Set([slug]);
+  const push = (e?: Employer) => {
+    if (e && !seen.has(e.slug)) { seen.add(e.slug); out.push(e); }
+  };
+  push(EMPLOYERS[0]);
+  push(EMPLOYERS[1]);
+  for (let k = 1; out.length < n && k <= EMPLOYERS.length; k++) {
+    push(EMPLOYERS[(i + k) % EMPLOYERS.length]);
+  }
+  return out.slice(0, n);
 }
