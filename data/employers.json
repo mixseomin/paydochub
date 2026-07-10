@@ -4,10 +4,13 @@
   "slug": "loves-talent-stop",
   "pv": 6921,
   "demand": 1,
-  "platforms": [],
+  "platforms": [
+   "ADP"
+  ],
   "examples": [
    "loves-talent-stop-employee-portal"
-  ]
+  ],
+  "portal": "https://my.adp.com"
  },
  {
   "name": "Hobby Lobby",
@@ -43,7 +46,8 @@
   "examples": [
    "ultipro-login-salvation-army"
   ],
-  "logo": true
+  "logo": true,
+  "portal": "https://signin.ultipro.com"
  },
  {
   "name": "Best Buy",
@@ -73,7 +77,8 @@
    "ess-login-ikea",
    "kronos-ikea-portal"
   ],
-  "logo": true
+  "logo": true,
+  "portal": "https://www.coworker.ikea.com"
  },
  {
   "name": "Kohls",
@@ -166,7 +171,7 @@
   "pv": 1265,
   "demand": 1,
   "platforms": [
-   "Kronos"
+   "Workday"
   ],
   "examples": [
    "nike-kronos-login"
@@ -194,11 +199,14 @@
   "slug": "rack-room-shoes",
   "pv": 1146,
   "demand": 2,
-  "platforms": [],
+  "platforms": [
+   "Oracle"
+  ],
   "examples": [
    "rack-room-shoes-employee-login",
    "rack-room-shoes-employee-portal"
-  ]
+  ],
+  "portal": "https://selfservice.rackroom.com/OA_HTML/AppsLogin"
  },
  {
   "name": "Brookshire Grocery",
@@ -235,7 +243,8 @@
    "kfc-payslip-login",
    "kfc-payroll-login",
    "hr-portal-kfc"
-  ]
+  ],
+  "portal": "https://teamkfc.yum.com/"
  },
  {
   "name": "Wendys",
@@ -293,7 +302,9 @@
   "slug": "caesars",
   "pv": 1025,
   "demand": 2,
-  "platforms": [],
+  "platforms": [
+   "Salesforce"
+  ],
   "examples": [
    "scheduling-caesars-ess-login",
    "caesars-hub-employee-login"
@@ -351,7 +362,8 @@
    "my-workday-login-jb-hunt",
    "jb-hunt-com-employee-login",
    "jb-hunt-payroll-login"
-  ]
+  ],
+  "portal": "https://wd501.myworkday.com/jbhunt"
  },
  {
   "name": "Ingles",
@@ -359,7 +371,7 @@
   "pv": 992,
   "demand": 2,
   "platforms": [
-   "Kronos"
+   "SAP SuccessFactors"
   ],
   "examples": [
    "ingles-employee-portal",
@@ -381,10 +393,13 @@
   "slug": "leggett-platt",
   "pv": 953,
   "demand": 1,
-  "platforms": [],
+  "platforms": [
+   "Money Network"
+  ],
   "examples": [
    "paystub-portal-login-leggett-and-platt"
-  ]
+  ],
+  "portal": "https://www.paystubportal.com/leggett"
  },
  {
   "name": "Hyatt",
@@ -530,13 +545,16 @@
   "slug": "randstad",
   "pv": 853,
   "demand": 4,
-  "platforms": [],
+  "platforms": [
+   "PeopleSoft"
+  ],
   "examples": [
    "randstad-portal-payslip",
    "randstad-pay-stub-portal",
    "randstad-employee-portal",
    "randstad-usa-employee-portal"
-  ]
+  ],
+  "portal": "https://www.workplace.randstad.com"
  },
  {
   "name": "Carnival",
