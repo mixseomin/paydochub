@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldAlert, FileText, KeyRound, ChevronRight } from "lucide-react";
 import { JsonLd } from "../components/JsonLd";
 import { breadcrumbs, SITE_URL } from "../lib/seo/breadcrumbs";
-import { EMPLOYERS, findEmployer, relatedEmployers } from "../lib/employers";
+import { EMPLOYERS, findEmployer, relatedEmployers, isRichEmployer } from "../lib/employers";
 
 export const dynamicParams = false;
 
@@ -29,6 +29,9 @@ export async function generateMetadata({
     description: `Step-by-step guide to your ${e.name} pay stub, W-2, and employee portal login${e.portal ? ", plus a verified link to the official portal" : ""}. Plain English, updated for 2026.`,
     alternates: { canonical: `/${e.slug}` },
     openGraph: { url: `/${e.slug}` },
+    // Thin templated employers (only a name, no verified portal/platforms/screenshot) are
+    // noindex+follow so the bulk stops signalling scaled content; rich pages stay indexable.
+    ...(isRichEmployer(e) ? {} : { robots: { index: false, follow: true } }),
   };
 }
 

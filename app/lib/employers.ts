@@ -15,6 +15,20 @@ export type Employer = {
 // Already sorted by page-views (pv) descending in the source file.
 export const EMPLOYERS: Employer[] = employers as Employer[];
 
+/**
+ * A page is "rich" enough to index when it carries at least 2 of the 3 unique
+ * per-employer signals (verified portal URL, named payroll platforms, portal
+ * screenshot). Below that it's ~95% templated advice with only the name swapped
+ * in - exactly what Google bulk-marks "Crawled - currently not indexed". Those
+ * pages stay live but get noindex+follow and leave the sitemap so the thin bulk
+ * (561 of 600) stops dragging the domain's quality signal. Fill a page's data to
+ * flip it back to indexed. Prune decision: earns-strategy 2026-07-11.
+ */
+export function isRichEmployer(e: Employer): boolean {
+  const score = (e.portal ? 1 : 0) + (e.platforms.length ? 1 : 0) + (e.shot ? 1 : 0);
+  return score >= 2;
+}
+
 const BY_SLUG = new Map(EMPLOYERS.map((e) => [e.slug, e]));
 
 export function findEmployer(slug: string): Employer | undefined {

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { EMPLOYERS } from "./lib/employers";
+import { EMPLOYERS, isRichEmployer } from "./lib/employers";
 
 const BASE = "https://paydochub.com";
 
@@ -17,7 +17,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/terms`,         lastModified: today, changeFrequency: "yearly",  priority: 0.3 },
   ];
 
-  const employers: MetadataRoute.Sitemap = EMPLOYERS.map((e) => ({
+  // Only the rich, genuinely-unique employer pages go in the sitemap; the ~561 thin
+  // templated ones are noindex+follow (see isRichEmployer / earns-strategy 2026-07-11).
+  const employers: MetadataRoute.Sitemap = EMPLOYERS.filter(isRichEmployer).map((e) => ({
     url: `${BASE}/${e.slug}`,
     lastModified: today,
     changeFrequency: "monthly" as const,
