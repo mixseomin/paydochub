@@ -17,6 +17,9 @@ export function Analytics() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+              var rh = '(direct)';
+              try { if (document.referrer) rh = new URL(document.referrer).hostname; } catch (e) {}
+              gtag('set', { ref_host: rh });
               gtag('config', '${gaId}', { page_path: window.location.pathname });
             `}
           </Script>
