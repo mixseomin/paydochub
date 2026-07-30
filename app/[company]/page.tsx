@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
+import { readFileSync } from "fs";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+
+// Reported/blocked employer slugs live outside the repo (survive deploy). Read fresh
+// so a report's revalidatePath() flips the page to 404 without a rebuild.
+function isBlocked(slug: string): boolean {
+  try {
+    const list = JSON.parse(
+      readFileSync(`${process.env.REPORT_DIR || "/opt/paydochub-reports"}/blocked.json`, "utf8")
+    );
+    return Array.isArray(list) && list.includes(slug);
+  } catch {
+    return false;
+  }
+}
 import { ArrowRight, ShieldAlert, FileText, KeyRound, ChevronRight } from "lucide-react";
 import { JsonLd } from "../components/JsonLd";
 import { breadcrumbs, SITE_URL } from "../lib/seo/breadcrumbs";
@@ -42,7 +56,7 @@ export default async function CompanyPage({
 }) {
   const { company } = await params;
   const e = findEmployer(company);
-  if (!e) notFound();
+  if (!e || isBlocked(company)) notFound();
 
   const platformList = e.platforms.length ? e.platforms.join(" and ") : "";
   const related = relatedEmployers(e.slug);

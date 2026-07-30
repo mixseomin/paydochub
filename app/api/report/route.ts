@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { appendFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { EMPLOYERS } from "../../lib/employers";
 
@@ -12,16 +13,17 @@ const BLOCKED = `${STORE_DIR}/blocked.json`;
 const EMPLOYER_SLUGS = new Set(EMPLOYERS.map((e) => e.slug));
 
 // Auto-block: a report that passed captcha/honeypot/time-trap/rate-limit immediately
-// hides its page (middleware -> 410) if the reported URL is a real employer page.
-// Restricted to employer slugs so nobody can 410 core pages (/about, /report, ...).
-function autoBlock(url: string) {
+// hides its page (page reads the blocklist -> notFound 404) if the reported URL is a
+// real employer page. Restricted to employer slugs so nobody can 404 core pages
+// (/about, /report, ...). Returns the blocked slug so the caller can revalidate it.
+function autoBlock(url: string): string | null {
   let slug = "";
   try {
     slug = new URL(url).pathname.replace(/^\/+|\/+$/g, "");
   } catch {
-    return;
+    return null;
   }
-  if (!slug || slug.includes("/") || !EMPLOYER_SLUGS.has(slug)) return;
+  if (!slug || slug.includes("/") || !EMPLOYER_SLUGS.has(slug)) return null;
   let list: string[] = [];
   try {
     const parsed = JSON.parse(readFileSync(BLOCKED, "utf8"));
@@ -35,6 +37,7 @@ function autoBlock(url: string) {
     writeFileSync(BLOCKED, JSON.stringify(list));
     console.log(`[report] auto-blocked slug=${slug}`);
   }
+  return slug;
 }
 
 // ponytail: fixed-answer captcha + honeypot + time-trap + rate-limit. Stops bots on a
@@ -103,6 +106,7 @@ export async function POST(req: NextRequest) {
   }
   // Also to journalctl so `journalctl -u paydochub | grep '\[report\]'` surfaces new ones.
   console.log(`[report] brand=${rec.brand} url=${rec.url} email=${rec.email}`);
-  autoBlock(rec.url);
+  const blockedSlug = autoBlock(rec.url);
+  if (blockedSlug) revalidatePath(`/${blockedSlug}`);
   return NextResponse.json({ ok: true });
 }
