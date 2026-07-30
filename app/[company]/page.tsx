@@ -346,6 +346,14 @@ export default async function CompanyPage({
           </div>
         </aside>
       </div>
+      <div className="mt-10 pt-6 border-t border-black/10">
+        <Link
+          href={`/report?url=${encodeURIComponent(`${SITE_URL}/${e.slug}`)}&brand=${encodeURIComponent(e.name)}`}
+          className="inline-flex items-center gap-1.5 text-xs text-muted-2 hover:text-red-600 transition-colors"
+        >
+          <ShieldAlert size={13} /> Report this page (trademark / impersonation)
+        </Link>
+      </div>
     </div>
   );
 }

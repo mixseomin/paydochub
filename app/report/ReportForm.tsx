@@ -3,7 +3,13 @@
 import { useState, useRef, useEffect } from "react";
 import { ShieldCheck, ArrowRight } from "lucide-react";
 
-export function ReportForm() {
+export function ReportForm({
+  initialUrl = "",
+  initialBrand = "",
+}: {
+  initialUrl?: string;
+  initialBrand?: string;
+}) {
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [err, setErr] = useState("");
   const mounted = useRef(0);
@@ -72,11 +78,11 @@ export function ReportForm() {
     <form onSubmit={onSubmit} className="space-y-4">
       <div>
         <label className="block text-sm font-semibold mb-1">Brand / company name *</label>
-        <input name="brand" required className="input w-full" autoComplete="off" placeholder="e.g. Example Corp" />
+        <input name="brand" required defaultValue={initialBrand} className="input w-full" autoComplete="off" placeholder="e.g. Example Corp" />
       </div>
       <div>
         <label className="block text-sm font-semibold mb-1">Page URL on paydochub.com</label>
-        <input name="url" type="url" className="input w-full" autoComplete="off" placeholder="https://paydochub.com/..." />
+        <input name="url" type="url" defaultValue={initialUrl} className="input w-full" autoComplete="off" placeholder="https://paydochub.com/..." />
       </div>
       <div>
         <label className="block text-sm font-semibold mb-1">Your email *</label>

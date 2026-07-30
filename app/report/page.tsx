@@ -11,7 +11,12 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default function ReportPage() {
+export default async function ReportPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ url?: string; brand?: string }>;
+}) {
+  const { url = "", brand = "" } = await searchParams;
   return (
     <article className="max-w-2xl mx-auto px-6 py-10">
       <JsonLd data={breadcrumbs([{ name: "Report", path: "/report" }])} />
@@ -26,7 +31,7 @@ export default function ReportPage() {
         <strong>within 24 hours</strong>, so there is no need to escalate to our host or CDN. You
         will see a confirmation as soon as it is received.
       </p>
-      <ReportForm />
+      <ReportForm initialUrl={url} initialBrand={brand} />
     </article>
   );
 }

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { appendFileSync, mkdirSync } from "node:fs";
+import { appendFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { EMPLOYERS } from "../../lib/employers";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -7,6 +8,34 @@ export const dynamic = "force-dynamic";
 // Reports are appended OUTSIDE the git repo so `git reset --hard` on deploy can't wipe them.
 const STORE_DIR = process.env.REPORT_DIR || "/opt/paydochub-reports";
 const STORE = `${STORE_DIR}/reports.jsonl`;
+const BLOCKED = `${STORE_DIR}/blocked.json`;
+const EMPLOYER_SLUGS = new Set(EMPLOYERS.map((e) => e.slug));
+
+// Auto-block: a report that passed captcha/honeypot/time-trap/rate-limit immediately
+// hides its page (middleware -> 410) if the reported URL is a real employer page.
+// Restricted to employer slugs so nobody can 410 core pages (/about, /report, ...).
+function autoBlock(url: string) {
+  let slug = "";
+  try {
+    slug = new URL(url).pathname.replace(/^\/+|\/+$/g, "");
+  } catch {
+    return;
+  }
+  if (!slug || slug.includes("/") || !EMPLOYER_SLUGS.has(slug)) return;
+  let list: string[] = [];
+  try {
+    const parsed = JSON.parse(readFileSync(BLOCKED, "utf8"));
+    if (Array.isArray(parsed)) list = parsed;
+  } catch {
+    /* no file yet */
+  }
+  if (!list.includes(slug)) {
+    list.push(slug);
+    mkdirSync(STORE_DIR, { recursive: true });
+    writeFileSync(BLOCKED, JSON.stringify(list));
+    console.log(`[report] auto-blocked slug=${slug}`);
+  }
+}
 
 // ponytail: fixed-answer captcha + honeypot + time-trap + rate-limit. Stops bots on a
 // low-volume takedown form without a 3rd-party dep. Upgrade to Cloudflare Turnstile
@@ -74,5 +103,6 @@ export async function POST(req: NextRequest) {
   }
   // Also to journalctl so `journalctl -u paydochub | grep '\[report\]'` surfaces new ones.
   console.log(`[report] brand=${rec.brand} url=${rec.url} email=${rec.email}`);
+  autoBlock(rec.url);
   return NextResponse.json({ ok: true });
 }
