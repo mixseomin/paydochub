@@ -21,7 +21,8 @@ Next.js 16 + TypeScript + Tailwind v4 + Turbopack. Solo-operator civilian US-gov
 ```
 local: git push origin main
   → GHA ubuntu-latest runner
-    → SSH root@5.78.65.158
+    → SSH root@37.27.241.222   (ĐÍNH CHÍNH 2026-08-14: site đã dời khỏi as.on.tc
+      5.78.65.158 sang box2 37.27.241.222; /opt/paydochub KHÔNG còn trên box1)
       → /opt/paydochub/deploy.sh
         → cd /opt/paydochub
         → git fetch + git reset --hard origin/main
@@ -32,7 +33,7 @@ local: git push origin main
 
 **Recovery from broken deploy:**
 ```
-ssh root@5.78.65.158 'cd /opt/paydochub && git log -3 && pnpm build && systemctl restart paydochub'
+ssh root@37.27.241.222 'cd /opt/paydochub && git log -3 && pnpm build && systemctl restart paydochub'
 ```
 
 ## Repo structure
