@@ -68,11 +68,11 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {/* impact.com property verification. Their checker wants value=, not content=, so this
             can't go through metadata.other (which always emits content=). React 19 hoists a bare
-            <meta> into <head>. Same token for every site we own — it verifies the ACCOUNT. */}
+            <meta> into <head>. Token is issued PER PROPERTY by impact.com — each site has its own. */}
         <meta name="impact-site-verification"
               // React types have no `value` prop on <meta>; impact.com's checker reads
               // exactly that attribute, so spread it in (spreads skip excess-prop checks).
-              {...({ value: "aff469bb-f876-4f83-8910-a59f0e81331b" } as Record<string, string>)}
+              {...({ value: "fce14909-f375-4190-9b6d-6e3d69ef02e4" } as Record<string, string>)}
         />
         <JsonLd data={organizationJsonLd()} />
         <Header />
