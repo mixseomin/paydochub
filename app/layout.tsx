@@ -66,6 +66,10 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrains.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        {/* impact.com property verification. Their checker wants value=, not content=, so this
+            can't go through metadata.other (which always emits content=). React 19 hoists a bare
+            <meta> into <head>. Same token for every site we own — it verifies the ACCOUNT. */}
+        <meta name="impact-site-verification" value="aff469bb-f876-4f83-8910-a59f0e81331b" />
         <JsonLd data={organizationJsonLd()} />
         <Header />
         <main className="flex-1">{children}</main>
