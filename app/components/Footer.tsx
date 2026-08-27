@@ -24,6 +24,7 @@ export function Footer() {
             <div className="text-xs font-semibold uppercase tracking-wider text-muted mb-2">Legal</div>
             <ul className="space-y-1.5">
               <li><Link href="/privacy" className="hover:underline">Privacy</Link></li>
+              <li><Link href="/affiliate-disclosure" className="hover:underline">Affiliate Disclosure</Link></li>
               <li><Link href="/terms" className="hover:underline">Terms</Link></li>
               <li><Link href="/report" className="hover:underline">Report / Brand removal</Link></li>
             </ul>
