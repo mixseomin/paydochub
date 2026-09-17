@@ -23,6 +23,10 @@ export function Analytics() {
               gtag('config', '${gaId}', { page_path: window.location.pathname });
             `}
           </Script>
+          {/* page-events.js — chuẩn đo trang chung (cuộn 10→100 · giây hiện · click_inside/click_buy/click_out
+              với chiều `label`); nguồn duy nhất repo adfond packages/page-events, chuẩn adfond/docs/page-events.md.
+              Một URL cho mọi site: đổi nguồn là mọi site lên bản mới sau ≤10 phút, không dựng lại. */}
+          <Script src="https://adfond.com/page-events.js" strategy="afterInteractive" />
         </>
       )}
       {clarityId && (
